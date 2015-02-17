@@ -4,6 +4,7 @@
   "authors": [
     "Bryce Bigger <bbigger@thebiggerdesign.com>"
   ],
+  "cwd": "~/"
   "description": "quick starter environment for site building with gulp",
   "main": "gulpfile.js",
   "keywords": [
