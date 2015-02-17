@@ -1,0 +1,20 @@
+{
+  "name": "tbd-starter-gulp",
+  "version": "0.0.1",
+  "authors": [
+    "Bryce Bigger <bbigger@thebiggerdesign.com>"
+  ],
+  "description": "quick starter environment for site building with gulp",
+  "main": "gulpfile.js",
+  "keywords": [
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

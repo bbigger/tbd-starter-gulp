@@ -1,0 +1,10 @@
+{
+  "name": "tbd-starter-gulp",
+  "version": "0.0.1",
+  "description": "tbd-starter-gulp",
+  "devDependencies": {
+    "gulp-concat": "^2.4.3",
+    "gulp-gzip": "0.0.8",
+    "gulp-uglifyjs": "^0.6.0"
+  }
+}
