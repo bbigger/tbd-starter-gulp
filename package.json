@@ -1,10 +1,28 @@
 {
-  "name": "tbd-starter-gulp",
+  "name": "generator-tbd-starter-gulp",
   "version": "0.0.1",
-  "description": "tbd-starter-gulp",
+  "description": "simple project framework",
   "devDependencies": {
     "gulp-concat": "^2.4.3",
     "gulp-gzip": "0.0.8",
     "gulp-uglifyjs": "^0.6.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bbigger@github.com/bbigger/tbd-starter-gulp.git"
+  },
+  "keywords": [
+    "gulp",
+    "javascript"
+  ],
+  "author": "Bryce Bigger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbigger/tbd-starter-gulp/issues"
+  },
+  "homepage": "https://github.com/bbigger/tbd-starter-gulp"
 }
