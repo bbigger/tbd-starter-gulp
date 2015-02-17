@@ -3,8 +3,6 @@ var gulp        = require('gulp')
 	connect 	= require('gulp-connect')
 	browserSync = require('browser-sync')
 	sass 		= require('gulp-sass')
-	
-	
 	concat 		= require('gulp-concat')
 	gzip 		= require('gulp-gzip');
 	//uglify 		= require('gulp-uglifyjs')
@@ -33,7 +31,7 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('public/scss/styles.scss')
+    return gulp.src('sass/styles.scss')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest('public/css'))
         .pipe(browserSync.reload({stream:true}));
@@ -55,9 +53,9 @@ gulp.task('jsmash', function () {
 });
 
 gulp.task('default', ['browser-sync'], function () {
-	gulp.watch("public/scss/*.scss", ['sass']);
-	gulp.watch("public/js/*.js", ['jsmash']);
+	gulp.watch("scss/*.scss", ['sass']);
+	gulp.watch("public/js/*.js", ['bs-reload']);
 	gulp.watch("public/*.html", ['bs-reload']);
-	gulp.watch("public/*.php", ['bs-reload']);
+	//gulp.watch("public/*.php", ['bs-reload']);
 	//gulp.watch("public/svg/*.svg", ['svgbuild']);
 });
